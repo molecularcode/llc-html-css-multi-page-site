@@ -569,13 +569,15 @@ There are many different file types that can be used for the web. Each type is b
         </section>
 
         <section class="slide" data-markdown>
-##The alt attribute
+##The alt attributes
 
-`alt` is an optional image **attribute** and refers to *alternative text*. Alt text is read by screen reading software used by visually impaired users.
+<p>`alt` is an optional image **attribute** and refers to *alternative text*. It should be a short description of the image. HTML tags can contain more than one attribute</p>
 
-It also displays when there's a broken or missing image due to typos or moved files. It should be a short description of the image.
+Alt text is primarily to improve accessibility and is read by screen reading software used by visually impaired users.
 
-HTML tags can contain more than one attribute. Here's how you would use the `alt` attribute with the `src` attribute.
+It's also used by Google in it's page ranking algorithm, so is important for SEO displays. And will display when there's a broken or missing image due to typos or moved files. 
+
+Here's how you would use the `alt` attribute with the `src` attribute.
 
 ```
 &lt;img src="images/profile.jpg" alt="Jane Smith">
@@ -685,13 +687,13 @@ Older presentational HTML tags like `&lt;center>` and `&lt;font>` should no long
             <p>In the above example:</p>
 
             <ul>
-                <li>Which one is the selector? <br>
+                <li>Which is the selector? <br>
                     <span class="delayed">h1</span>
                 </li>
-                <li class="delayed">Which one is the property? <br>
+                <li class="delayed">Which are properties? <br>
                     <span class="delayed">color &amp; font-size</span>
                 </li>
-                <li class="delayed">Which one is the value? <br>
+                <li class="delayed">Which are values? <br>
                     <span class="delayed">blue &amp; 12px</span>
                 </li>
             </ul>        
@@ -950,7 +952,7 @@ text-transform: lowercase;</textarea>
                     Pick 3 fonts from <a href="https://www.google.com/fonts">Google Fonts</a>.
                 </li>
                 <li>
-                    Add the Google font style sheet link to all three documents to access and use the font files. Put it before your CSS file.
+                    Add the Google font style sheet link to all three .html documents to access and use the font files. Put it before your CSS file.
 
 <pre><code>&lt;title&gt;Jane Smith | About Me&lt;/title&gt;
 &lt;link href='http://fonts.googleapis.com/css?family=Nixie+One|Open+Sans:300|Pacifico' rel='stylesheet' type='text/css'&gt;
@@ -958,7 +960,7 @@ text-transform: lowercase;</textarea>
 </code></pre>
                 </li>
                 <li>
-                    In the sample project, most of site uses the same font and color except for the <code>h1</code> and a couple of accented blocks of text. Add the main font styles to the existing <code>body</code> declaration block.
+                    In the sample project, most of site uses the same font and color except for the <code>h1</code> and a couple of accented blocks of text. Add the main font styles to the existing <code>body</code> declaration block in your style.css file.
 <pre><code>body {
     font-family: "Open Sans", sans-serif;
     color: #333;
@@ -1007,6 +1009,8 @@ text-transform: lowercase;</textarea>
             ##What is The Box Model?
 
             The browser looks at every HTML element on the page as a rectangular box. The CSS Box Model describes the way CSS styles the size and spacing of HTML elements. Understanding the box model is crucial for understanding how to position elements with CSS to create the desired page layout. This is one of the trickiest part of CSS, so don't worry if it seems confusing!
+			
+			<img src="framework/img/workshop/box.gif" alt="" title="">
 
             CSS uses 5 properties to determine the size and spacing of these boxes:
 
